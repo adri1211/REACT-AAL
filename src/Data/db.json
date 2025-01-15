@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "titulo": "Curso de JavaScript",
+      "precio": 29.99,
+      "tags": ["JavaScript", "ES6", "Web Development"],
+      "img": "https://example.com/js-course.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Curso de Python",
+      "precio": 39.99,
+      "tags": ["Python", "Data Science", "Machine Learning"],
+      "img": "https://example.com/python-course.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Curso de Java",
+      "precio": 34.99,
+      "tags": ["Java", "Spring", "Backend"],
+      "img": "https://example.com/java-course.jpg"
+    },
+    {
+      "id": 4,
+      "titulo": "Curso de C#",
+      "precio": 29.99,
+      "tags": ["C#", ".NET", "Backend"],
+      "img": "https://example.com/csharp-course.jpg"
+    },
+    {
+      "id": 5,
+      "titulo": "Curso de Ruby",
+      "precio": 24.99,
+      "tags": ["Ruby", "Rails", "Web Development"],
+      "img": "https://example.com/ruby-course.jpg"
+    },
+    {
+      "id": 6,
+      "titulo": "Curso de PHP",
+      "precio": 19.99,
+      "tags": ["PHP", "Laravel", "Web Development"],
+      "img": "https://example.com/php-course.jpg"
+    },
+    {
+      "id": 7,
+      "titulo": "Curso de C++",
+      "precio": 29.99,
+      "tags": ["C++", "Game Development", "Systems Programming"],
+      "img": "https://example.com/cpp-course.jpg"
+    },
+    {
+      "id": 8,
+      "titulo": "Curso de Swift",
+      "precio": 34.99,
+      "tags": ["Swift", "iOS Development", "Mobile Development"],
+      "img": "https://example.com/swift-course.jpg"
+    },
+    {
+      "id": 9,
+      "titulo": "Curso de Kotlin",
+      "precio": 29.99,
+      "tags": ["Kotlin", "Android Development", "Mobile Development"],
+      "img": "https://example.com/kotlin-course.jpg"
+    },
+    {
+      "id": 10,
+      "titulo": "Curso de TypeScript",
+      "precio": 24.99,
+      "tags": ["TypeScript", "JavaScript", "Web Development"],
+      "img": "https://example.com/ts-course.jpg"
+    }
+  ]
