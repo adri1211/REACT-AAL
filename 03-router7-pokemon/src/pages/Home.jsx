@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react"
-
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { ROUTES } from "../routes/paths";
 const Home = () => {
 
   const [pokemons, setPokemons] = useState([])
@@ -33,19 +34,30 @@ const Home = () => {
       <h1 className="text-3xl font-bold mb-6">Pokemons disponibles </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {
-          pokemons.map(pokemons => (
+          pokemons.map(pokemon => (
             <div 
-              key={pokemons.id} 
+              key={pokemon.id} 
               className="bg-white rounded-xl p-6 hover:shadow-sm">
 
                 <div className="relative group">
                   <img className="mx-auto"
-                  src={pokemons.sprites.front_default} 
-                  alt={pokemons.name} />
+                  src={pokemon.sprites.front_default} 
+                  alt={pokemon.name} />
 
                   <h2 className="text-xl font-bold text-center mt-4">
-                    {pokemons.name}
+                    {pokemon.name}
                   </h2>
+                  <div className="flex-1 flex justify-center space-x-2 mt-4">
+                    <button className="bg-red-500 text-white px-4 py-2 rounded hover:bg-slate-900">
+                      Añadir a Favoritos
+                    </button>
+
+                    {/*voy a ir a ver los detalles usando elementos de react router */}
+                    <Link className="bg-green-500 text-white px-4 py-2 rounded hover:bg-slate-900"
+                    to = {`${ROUTES.SEARCH}/${pokemon.name}`}>
+                      Ver Detalles
+                    </Link>
+                  </div>
                 </div>
 
             </div>

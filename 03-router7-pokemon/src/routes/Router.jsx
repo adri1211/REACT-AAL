@@ -4,7 +4,8 @@ import { ROUTES } from "../routes/paths";
 import Home  from "../pages/Home";
 import Favorites from "../pages/Favorites";
 import Search from "../pages/Search";
-import PokemonDetails from "../pages/PokemonDetails";
+import PokemonDetail from "../pages/PokemonDetail";
+import ErrorPage from "../pages/ErrorPage";
 
 export const router = createBrowserRouter([
     {
@@ -24,11 +25,25 @@ export const router = createBrowserRouter([
             },
             {
                 path: ROUTES.POKEMON_DETAIL,
-                element: <PokemonDetails />,
-            },
-        ]
-    },
-    {
+                element: <PokemonDetail />,
+                //loader es una caracteristica de react-router-dom nueva
+                //que permite cargar datos antes de que se renderice el componente
+                loader: async ({ params }) => {
+                    try{
+                        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${params.name}`);
+                        if(!response.ok){
+                            throw new Error('Pokemon not found');
+                        }
+                        return response.json();
+                    }catch(error){
+                        console.log(error);
+                    }
+                    
+                },
+                errorElement: <ErrorPage />,
 
-    }
+            },
+        ],
+    },
+    {},
 ]);

@@ -7,8 +7,10 @@ function App() {
   // y el resto de cosas deberian de estar en rootLayout
   return (
     <>
+      <PokemonProvider>
+        <RouterProvider router={router}/>
+      </PokemonProvider>
       
-      <RouterProvider router={router}/>
       
     </>
   )
