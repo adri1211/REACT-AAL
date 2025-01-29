@@ -34,7 +34,7 @@ export const router = createBrowserRouter([
                         if(!response.ok){
                             throw new Error('Pokemon not found');
                         }
-                        return response.json();
+                        return await response.json();
                     }catch(error){
                         console.log(error);
                     }
