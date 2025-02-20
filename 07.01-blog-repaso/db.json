@@ -1,0 +1,46 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "Introducción a React",
+        "content": "React es una biblioteca de JavaScript para construir interfaces de usuario.",
+        "author": "Juan Pérez"
+      },
+      {
+        "id": 2,
+        "title": "React Router Dom",
+        "content": "React Router permite la navegación entre componentes de una aplicación.",
+        "author": "María López"
+      }
+    ],
+    "products": [
+      {
+        "id": 1,
+        "name": "Laptop Lenovo",
+        "price": 799.99,
+        "description": "Una laptop potente para desarrollo y juegos.",
+        "image": "laptop.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Teléfono Samsung",
+        "price": 499.99,
+        "description": "Teléfono con cámara de alta resolución y batería de larga duración.",
+        "image": "phone.jpg"
+      }
+    ],
+    "users": [
+      {
+        "id": 1,
+        "username": "usuario1",
+        "password": "123456"
+      },
+      {
+        "id": 2,
+        "username": "usuario2",
+        "password": "abcdef"
+      }
+    ],
+    "cart": []
+  }
+  
